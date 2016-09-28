@@ -31,6 +31,12 @@
 }
 
 
+- (instancetype)initWithStyle:(AGHourglassActivityIndicatorStyle)style {
+    _style = style;
+    return self.init;
+}
+
+
 #define rectSize (self.frame.size.width / 33)
 static uint getByte(uint64_t value, uint index) {
     return (value >> (index * 8)) & 255;
@@ -74,12 +80,15 @@ static uint getByte(uint64_t value, uint index) {
 
 
 - (void)renderHourglassImage {
-    static const uint64_t raw[16] = {134418690, 134545921, 386204161, 151392001, 151454212, 369558020, 168493569,
-        185336321, 202179073, 219021825, 353042945, 336331265, 319619585, 302907905, 235864578, 286196226};
+    static const uint64_t raw_hourglass_default[16] = {134418690, 134545921, 386204161, 151392001, 151454212, 369558020,
+        168493569, 185336321, 202179073, 219021825, 353042945, 336331265, 319619585, 302907905, 235864578, 286196226};
+    static const uint64_t raw_hourglass_lite[16] = {151260929, 151322882, 386203906, 168168705, 168231172, 369557764,
+        185270529, 202113281, 218956033, 235798785, 252641538, 353042689, 336331009, 319619329, 302907649, 286195970};
     
     for (int i = 0; i < 16; i++) {
-        [self drawRectAtX:getByte(raw[i], 3) y:getByte(raw[i], 2) width:getByte(raw[i], 1) height:getByte(raw[i], 0)];
-        [self drawRectAtX:getByte(raw[i], 3) y:33 - getByte(raw[i], 2) - getByte(raw[i], 0) width:getByte(raw[i], 1) height:getByte(raw[i], 0)];
+        uint64_t raw = _style == AGHourglassActivityIndicatorStyleDefault ? raw_hourglass_default[i] : raw_hourglass_lite[i];
+        [self drawRectAtX:getByte(raw, 3) y:getByte(raw, 2) width:getByte(raw, 1) height:getByte(raw, 0)];
+        [self drawRectAtX:getByte(raw, 3) y:33 - getByte(raw, 2) - getByte(raw, 0) width:getByte(raw, 1) height:getByte(raw, 0)];
     }
 }
 
