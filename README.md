@@ -5,7 +5,7 @@ Old-school pixelated hourglass activity indicator component for iOS. Objective-C
 
 Two styles available (see style property):
 
-<img src="http://alsedi.com/github/AGHourglassActivityIndicator_styles.png">
+<img src="http://alsedi.com/github/AGHourglassActivityIndicator_styles2.png">
 
 Usage:
 <pre>
