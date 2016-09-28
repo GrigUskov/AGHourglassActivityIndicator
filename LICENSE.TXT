@@ -2,7 +2,9 @@ The MIT License (MIT)
 
 AGHourglassActivityIndicator for iOS / Objective-C
 
-Copyright © 2016 ALSEDI Group, Grig Uskov
+Copyright © 2016 ALSEDI Group, http://alsedi.com 
+Grig Uskov grig@alsedi.com
+
 
 Permission is hereby granted, free of charge, to any person obtaining a 
 copy of this software and associated documentation files (the “Software”),
