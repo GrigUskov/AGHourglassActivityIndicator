@@ -6,7 +6,7 @@ Old-school pixelated hourglass activity indicator component for iOS. Objective-C
 Usage:
 <pre>
 [self.view addSubview:({
-	AGHourglassActivityIndicator *indicator = [[AGHourglassActivityIndicator alloc] init];
+	AGHourglassActivityIndicator *indicator = [[AGHourglassActivityIndicator alloc] init]; // or initWithStyle, Frame etc...
 	indicator.color = [UIColor blackColor];  // optional, [UIColor grayColor] is default one
 	indicator.animationDuration = 5;         // optional, 7 seconds by default
 	[indicator startAnimating];
