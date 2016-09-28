@@ -1,5 +1,5 @@
 # AGHourglassActivityIndicator
-Old-school pixelated hourglass activity indicator component. Objective-C, no external images/resources used.
+Old-school pixelated hourglass activity indicator component for iOS. Objective-C, no external images/resources used.
 
 <img src="http://alsedi.com/github/AGHourglassActivityIndicator.gif">
 
