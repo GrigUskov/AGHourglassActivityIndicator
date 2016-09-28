@@ -3,6 +3,10 @@ Old-school pixelated hourglass activity indicator component for iOS. Objective-C
 
 <img src="http://alsedi.com/github/AGHourglassActivityIndicator.gif">
 
+Two styles available (see style property):
+
+<img src="http://alsedi.com/github/AGHourglassActivityIndicator_styles.png">
+
 Usage:
 <pre>
 [self.view addSubview:({
