@@ -1,6 +1,8 @@
 # AGHourglassActivityIndicator
 Old-school pixelated hourglass activity indicator component. Objective-C, no external images/resources used.
 
+<img src="http://alsedi.com/github/AGHourglassActivityIndicator.gif">
+
 Usage:
 <pre>
 [self.view addSubview:({
